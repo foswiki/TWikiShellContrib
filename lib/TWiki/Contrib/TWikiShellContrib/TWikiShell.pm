@@ -10,7 +10,8 @@ use Data::Dumper;
 use Cwd;
 use strict;
 
-use base qw(Term::Shell);
+use Term::Shell;
+our @ISA = qw( Term::Shell );
 use vars qw {$VERSION $config $prefix $prefixPath};
 
 $VERSION = "2.01";
